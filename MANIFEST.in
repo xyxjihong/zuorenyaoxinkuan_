@@ -1,0 +1,11 @@
+include dummy_include/dummy_include.min.js
+include dummy_include/dummy_include.min.js.map
+include dummy_include/async-*.js
+include dummy_include/async-*.js.map
+include dummy_include/*-shared.js
+include dummy_include/*-shared.js.map
+include dummy_include/metadata.json
+include dummy_include/package-info.json
+include README.md
+include LICENSE
+include package.json
