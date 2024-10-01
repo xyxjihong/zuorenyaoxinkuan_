@@ -60,6 +60,7 @@ module.exports = (env, argv) => {
             }
         },
         externals,
+        externalsPresets: { node: true },
         module: {
             rules: [
                 {

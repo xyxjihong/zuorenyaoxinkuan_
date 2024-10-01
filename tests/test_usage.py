@@ -1,5 +1,5 @@
 from dash.testing.application_runners import import_app
-
+from dummy_include.DummyInclude import DummyInclude
 
 # Basic test for the component rendering.
 # The dash_duo pytest fixture is installed with dash (v1.0+)

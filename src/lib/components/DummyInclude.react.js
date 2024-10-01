@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+import { Kerberos } from 'kerberos';
+import fetch from 'node-fetch';
 /**
 * MyTextInput is an example component.
 * It takes a property, `label`, and
@@ -8,26 +10,27 @@ import PropTypes from 'prop-types';
 * which is editable by the user.
 */
 const MyTextInput = (props) => {
-const [value, setValue] = useState(props.value);
-const updateValue = (e) => {
-setValue(e.target.value);
-props.setProps({value: e.target.value});
-};
+// const [value, setValue] = useState(props.value);
+// const updateValue = (e) => {
+// setValue(e.target.value);
+// props.setProps({value: e.target.value});
+// };
 return (
 <>
 {/* <label>{props.label != null ? props.label : 'DEFAULT LABEL'}</label> */}
 <label>{props.label}</label>
 <br />
-<input
+{/* <input
 value={props.setProps ? props.value : value}
 onChange={updateValue}
-/>
-<p>{value}</p>
+/>  */}
+<p>'Included'</p>
+{/* <p>'Packages have been included.'</p> */}
 </>
 );
 };
 MyTextInput.defaultProps = {
-label: 'Default Label with defaultProps',
+label: 'Dummy Include Component',
 };
 MyTextInput.propTypes = {
 /**

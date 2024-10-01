@@ -1,5 +1,6 @@
 import dummy_include
 from dash import Dash, callback, html, Input, Output
+from dummy_include.DummyInclude import DummyInclude
 
 app = Dash(__name__)
 
